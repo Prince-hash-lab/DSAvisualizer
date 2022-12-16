@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Algorithm Visualizer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicoon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <a href="index.html" class="hero-logo" data-aos="zoom-in"><img src="assets/img/favicoon.png" alt="Algorithm"
+          style="height: 320px; width : 290px; border-radius: 50%; border: 5px solid rgb(235, 231, 231);"></a>
+      <h1 data-aos="zoom-in">Welcome To Algorithm Visualizer</h1>
+      <h2 data-aos="fade-up">A Visualizer to visualize sorting algorithms for better understanding</h2>
+      <a data-aos="fade-up" data-aos-delay="200" href="Visualization.html" class="btn-get-started scrollto">Get
+        Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/favicoon.png" alt="Algorithm" style="border-radius: 50%;"
+            class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#selection-sort">About</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Codes</a></li>
+          <li class="dropdown"><a href="#"><span>Sorting Algorithms</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#selection-sort">Selection Sort</a></li>
+              <li><a href="#insertion-sort">Insertion Sort</a></li>
+              <li><a href="#bubble-sort">Bubble Sort</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#testimonials">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= SELECTION SORT ======= -->
+    <section id="selection-sort" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>About Algorithms</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <a href="Visualization.html">
+                <img src="assets/img/selection-sort.jpg" class="img-fluid" alt="selection-sort">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>SELECTION SORT</h3>
+              <p class="fst-italic">
+                The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering
+                ascending order) from the unsorted part and putting it at the beginning.
+              </p>
+              <p>
+                The algorithm maintains two subarrays in a given array :
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i> The subarray which already sorted. </li>
+                <li><i class="bx bx-check-double"></i> The remaining subarray was unsorted.</li>
+              </ul>
+              <p>
+                Complexity Analysis of Selection Sort:
+              </p>
+              <p>
+                Time Complexity: The time complexity of Selection Sort is O(N2) as there are two nested loops:
+                Therefore overall complexity = O(N) * O(N) = O(N*N) = O(N2)</p>
+              <p>
+
+                Auxiliary Space: O(1) as the only extra memory used is for temporary variables while swapping two values
+                in Array. The selection sort never makes more than O(N) swaps and can be useful when memory write is a
+                costly operation
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End SELECTION SORT -->
+
+
+    <!-- ======= INSERTION SORT ======= -->
+    <section id="insertion-sort" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <a href="Visualization.html">
+                <img src="assets/img/insertion-sort.jpg" class="img-fluid" alt="insertion-sort">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>INSERTION SORT</h3>
+              <p class="fst-italic">
+                Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in
+                your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted
+                part are picked and placed at the correct position in the sorted part. </p>
+              <p>
+                Characteristics of Insertion Sort:
+              </p>
+              <ul style="list-style:none;">
+                <li><i class="bx bx-check-double"></i> This algorithm is one of the simplest algorithm with simple
+                  implementation.</li>
+                <li><i class="bx bx-check-double"></i> Basically, Insertion sort is efficient for small data values.
+                </li>
+                <li><i class="bx bx-check-double"></i> Insertion sort is adaptive in nature, i.e. it is appropriate for
+                  data sets which are already partially sorted.</li>
+
+              </ul>
+              <p>
+                Complexity Analysis of Selection Sort:
+              </p>
+              <p>
+                Time Complexity: O(N^2) &emsp; Auxiliary Space: O(1)
+
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End INSERTION SORT -->
+
+
+    <!-- ======= BUBBLE SORT ======= -->
+    <section id="bubble-sort" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <a href="Visualization.html">
+                <img src="assets/img/bubble-sort.jpg" class="img-fluid" alt="insertion-sort">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>BUBBLE SORT</h3>
+              <p class="fst-italic">
+                Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if
+                they are in the wrong order. This algorithm is not suitable for large data sets as its average and
+                worst-case time complexity is quite high.
+              <p>
+                Worst Case Analysis for Bubble Sort:
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i> The worst-case condition for bubble sort occurs when elements of
+                  the array are arranged in decreasing order.</li>
+              </ul>
+              <p>
+                Complexity Analysis of Selection Sort:
+              </p>
+              <p>
+                Time Complexity: O(N^2) &emsp; Auxiliary Space: O(1)
+
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End INSERTION SORT -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Codes</h2>
+          <p>Executable codes</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Selection Sort</li>
+              <li data-filter=".filter-card">Bubble Sort</li>
+              <li data-filter=".filter-web">Insertion Sort</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/SELECTION SORT CPP NEW.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Selection Sort C++</h4>
+                <p>Selection Sort</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/SELECTION SORT CPP NEW.png" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="C++"><i class="bx bx-plus"></i></a>
+                  <a href="selection sort cpp.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/BUBBLE SORT CPP NEW.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Bubble Sort C++</h4>
+                <p>Bubble Sort</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/BUBBLE SORT CPP NEW.png" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="C++"><i class="bx bx-plus"></i></a>
+                  <a href="bubble sort cpp.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/INSERTION SORT CPP NEW.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Insertion Sort C++</h4>
+                <p>Insertion Sort</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/INSERTION SORT CPP NEW.png" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="C++"><i class="bx bx-plus"></i></a>
+                  <a href="insertion sort cpp.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/SELECTION SORTT JAVA NEW.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Selection Sort Java</h4>
+                <p>Selection Sort</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/SELECTION SORTT JAVA NEW.png" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Java"><i class="bx bx-plus"></i></a>
+                  <a href="selection sort java.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/BUBBLE SORT JAVA NEW.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Bubble Sort Java</h4>
+                <p>Bubble Sort</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/BUBBLE SORT JAVA NEW.png" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Java"><i class="bx bx-plus"></i></a>
+                  <a href="bubble sort java.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/INSERTION SORT JAVA NEW.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Insertion Sort Java</h4>
+                <p>Insertion Sort</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/INSERTION SORT JAVA NEW.png" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Java"><i class="bx bx-plus"></i></a>
+                  <a href="insertion sort java.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/SELECTION SORT PYTHON NEWW.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Selection Sort Python</h4>
+                <p>Selection Sort</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/SELECTION SORT PYTHON NEWW.png" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Python"><i class="bx bx-plus"></i></a>
+                  <a href="selection sort python.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/BUBBLE SORT PYTHON NEW.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Bubble Sort Python</h4>
+                <p>Bubble Sort</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/BUBBLE SORT PYTHON NEW.png" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Python"><i class="bx bx-plus"></i></a>
+                  <a href="bubble sort python.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/INSERTION SORT PYTHON NEW.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Insertion Sort Python</h4>
+                <p>Insertion Sort</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/INSERTION SORT PYTHON NEW.png" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Python"><i class="bx bx-plus"></i></a>
+                  <a href="insertion sort python.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+        <div class="quote-icon">
+          <i class="bx bxs-quote-right"></i>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <!-- ======= start ======= -->
+
+             <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  “ Keep your face always toward the sunshine—and shadows will fall behind you.” </p>
+                <img src="assets/img/testimonials/me.jpg" class="testimonial-img" alt="">
+                <h3>Prince</h3>
+                <h4>Email id : pprince_be19@thapar.edu</h4>
+              </div>
+            </div>
+            <!-- End testimonial item  -->
+
+
+<!-- 
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  "The purpose of our lives is to be happy."  </p>
+                <img src="assets/img/testimonials/me.jpg" class="testimonial-img" alt="">
+                <h3>Prince</h3>
+                <h4>Email id : pprince_be19@thapar.edu</h4>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+<!-- 
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  The way to get started is to quit talking and begin doing. </p>
+                <img src="assets/img/testimonials/me.jpg" class="testimonial-img" alt="">
+                <h3>Prince</h3>
+                <h4>pprince_be19@thapar.edu</h4>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+
+
+
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
